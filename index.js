@@ -63,15 +63,9 @@ client.connect(err => {
 
 });
   
+const port =5000
 
-
-
-
-
-app.get('/',(req, res) => {
-    res.send('Hello')
-})
-
+app.listen(process.env.PORT || port)
 
 
 
